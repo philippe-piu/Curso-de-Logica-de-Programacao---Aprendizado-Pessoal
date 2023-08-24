@@ -18,3 +18,4 @@ Este repositório foi criado como parte do meu aprendizado pessoal no curso de L
 </ul>
 <br>
 <p>Este repositório serve como um registro do meu progresso no curso e como um lugar onde posso armazenar e compartilhar os projetos e exercícios relacionados à lógica de programação. Encorajo outros alunos a explorarem este repositório para obterem ideias e referências enquanto também trabalham em seus próprios projetos.</p>
+<p>Este repositório é pessoal e está em constante evolução à medida que continuo aprendendo e praticando.</p>
