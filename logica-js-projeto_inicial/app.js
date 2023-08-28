@@ -1,9 +1,10 @@
 alert('Boas vindas ao jogo do número secreto');
+let numeroMaximo = 30;
 
 /*Criação de armazenamento de variaveis e criação de um número secreto aleatorio.
 To usando o parseInt para ele gerar um número inteiro está 30 + 1 porque ele le
 de 0 até 29 então coloco mais 1 para ler 30*/
-let numeroSecreto = parseInt(Math.random() * (30 + 1) );
+let numeroSecreto = parseInt(Math.random() * (numeroMaximo + 1) );
 //exibe uma mensagem no console com a informação aramzenada na variavel
 console.log(numeroSecreto);
 let chuteUsuario;
