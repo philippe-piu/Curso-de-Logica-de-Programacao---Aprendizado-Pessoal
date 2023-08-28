@@ -1,7 +1,9 @@
 alert('Boas vindas ao jogo do número secreto');
 
-//Criação de armazenamento de variaveis
-let numeroSecreto = 10;
+/*Criação de armazenamento de variaveis e criação de um número secreto aleatorio.
+To usando o parseInt para ele gerar um número inteiro está 30 + 1 porque ele le
+de 0 até 29 então coloco mais 1 para ler 30*/
+let numeroSecreto = parseInt(Math.random() * (30 + 1) );
 //exibe uma mensagem no console com a informação aramzenada na variavel
 console.log(numeroSecreto);
 let chuteUsuario;
@@ -15,7 +17,6 @@ while (chuteUsuario != numeroSecreto) {
 
   //Condicional
   if (chuteUsuario == numeroSecreto) {
-    alert(`Você acertou o número secreto é ${numeroSecreto}. Você acertou com ${tentativas} tentativas.`);
     break;
   } else {
     if (chuteUsuario > numeroSecreto) {
@@ -27,3 +28,11 @@ while (chuteUsuario != numeroSecreto) {
     tentativas++;
   }
 }
+
+/*Utilizando um operador ternario eu pergunto se tentativas é maior que 1 se for
+ele emprime tentativas se não que é representado por : ele imprime tentativa */
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+
+ alert(`Você acertou o número secreto é ${numeroSecreto}. Você acertou com ${tentativas} ${palavraTentativa}.`);
+  
+
